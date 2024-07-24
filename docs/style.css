@@ -1,0 +1,21 @@
+*{
+    box-sizing: boder-box;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #010922;
+    --primary-accent: #8080D7;
+    --secondary-accent: #AAD9D9;
+
+    --font-secondary: "Outfit", sans-serif;
+
+    --base-fonts:1.125rem; /*18 px*/
+    --h1-fonts:5.4375rem; /*87 px*/
+    --h2-fonts:3.5rem; /*56 px*/
+    --h3-fonts:1.25rem; /*20 px*/
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
