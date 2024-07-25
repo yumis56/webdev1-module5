@@ -17,5 +17,60 @@
 }
 
 body {
-    font-family: "Outfit", sans-serif;
+    background: var(--bg-color);
+    color: white;
+    font: var(--base-fonts) / 1.6 var(--font-secondary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+}
+
+a {
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1440;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    line-height: 4rem;
+    font-size: 1.25rem;
+}
+    
+.logo {
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 33.33%;
+    gap: 30px;
+}
+
+.menu-item {
+    text-align: right;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background: var(--background-color) url(../images/computer.png) no-repeat;
+    height: 473px;
+    font: 2rem / 1.6 var(--font-secondary);
 }
