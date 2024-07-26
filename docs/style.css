@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit");
 
 *{
-    box-sizing: boder-box;
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -23,11 +23,13 @@ body {
     background: var(--bg-color);
     color: white;
     font: var(--base-fonts) / 1.6 var(--font-secondary);
+
+    
 }
 
+/* ommitted h2 */
 h1,
-h2,
-h3, 
+h3,
 h4,
 h5,
 h6 {
@@ -55,11 +57,14 @@ header {
     display: flex;
     align-items: center;
     line-height: 4rem;
-    font-size: 1.25rem;
+    font-size: var(--h3-fonts);
+    
 }
     
 .logo {
     margin-right: auto;
+    color: white;
+    font-weight: 700;
 }
 
 .menu {
@@ -71,6 +76,8 @@ header {
 
 .menu-item {
     text-align: right;
+    color: white;
+    text-transform: lowercase;
 }
 
 
@@ -90,6 +97,7 @@ header {
 
 .sub-text {
     width: 50rem;
+    margin-bottom: 3.4%;
 }
 
 footer {
@@ -110,6 +118,8 @@ footer {
 .text-container h2 {
     text-align: left;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .image-container {
@@ -190,9 +200,13 @@ footer {
     text-align: center;
 }
 
-.hero_center .hero-content h1,
+.hero_center .hero-content h1 {
+    font-size: var(--h1-fonts);
+    margin-bottom: 10px;
+}
+
 .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.625rem;
     margin-bottom: 10px;
 }
 
@@ -305,7 +319,7 @@ footer {
 
 a.pill-link {
     display: inline-block;
-    padding: 10px 50px;
+    padding: 15px 50px;
     border-radius: 80px;
     background-color: var(--primary-accent);
     color: white;
