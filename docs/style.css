@@ -13,10 +13,10 @@
 
     --font-secondary: "Outfit", sans-serif;
 
-    --base-fonts:1.125rem; /*18 px*/
+    --base-fonts:1.168rem; /*18.688 px*/
     --h1-fonts:5.4375rem; /*87 px*/
     --h2-fonts:3.5rem; /*56 px*/
-    --h3-fonts:1.25rem; /*20 px*/
+    --links-fonts:1.25rem; /*20 px*/
 }
 
 body {
@@ -27,9 +27,8 @@ body {
     
 }
 
-/* ommitted h2 */
 h1,
-h3,
+h2,
 h4,
 h5,
 h6 {
@@ -37,10 +36,29 @@ h6 {
     text-transform: capitalize;
 }
 
+h1 {
+    font-size: var(--h1-fonts);
+}
+h2 {
+    font-size: var(--h2-fonts);
+}
+
+/* this is the section labels */
+h3 {
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    font-size: var(--base-fonts);
+}
+
 a {
     font-family: var(--font-secondary);
     text-transform: uppercase;
     text-decoration: none;
+    font-size: var(--links-fonts);
 }
 
 a:hover {
@@ -50,14 +68,14 @@ a:hover {
 main {
     width: 61.8vw;
     max-width: 1440;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 header {
     display: flex;
     align-items: center;
     line-height: 4rem;
-    font-size: var(--h3-fonts);
+    font-size: var(--links-fonts);
     
 }
     
@@ -89,12 +107,16 @@ header {
     font: 2rem / 1.6 var(--font-secondary);
 }
 
+
 .hero h1 {
     margin-top: 5rem;
     width: 35rem;
     font-weight: 700;
 }
 
+.hero p {
+    width: 22rem;
+}
 .sub-text {
     width: 50rem;
     margin-bottom: 3.4%;
@@ -118,8 +140,6 @@ footer {
 .text-container h2 {
     text-align: left;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .image-container {
@@ -128,6 +148,9 @@ footer {
     align-items: center;
     width: 100%;
     background-color:rgba(128, 128, 215, 20%);
+    border-radius: 7px;
+    padding-top: 1.618rem;
+    padding-bottom: 1.618rem;
 }
 
 .image-container img {
@@ -206,13 +229,12 @@ footer {
 }
 
 .hero-content h2 {
-    font-size: 2.625rem;
+    /* font-size: 2.625rem; */
     margin-bottom: 10px;
 }
 
 .hero-center .hero-content p,
 .hero-content p {
-    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 .hero_center .hero-content a.pill-link-black-button,
@@ -280,7 +302,6 @@ footer {
 }
 
 .testimonials-header p {
-    font-size: 1.25rem;
     color: grey;
 }
 
@@ -319,7 +340,7 @@ footer {
 
 a.pill-link {
     display: inline-block;
-    padding: 15px 50px;
+    padding: 20px 75px;
     border-radius: 80px;
     background-color: var(--primary-accent);
     color: white;
@@ -335,7 +356,7 @@ a.alt-pill-link {
     color: white;
     background-color: none;
     border-radius: 80px;
-    padding: 20px 50px;
+    padding: 25px 75px;
     border: 2px solid;
     background: rgba(161, 214, 214, 0.00);
 }
