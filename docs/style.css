@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #010922;
+    --primary-accent: #8080D7;
+    --secondary-accent: #AAD9D9;
+    --accent-color: #171753;
+
+    --font-secondary: "Outfit", sans-serif;
+
+    --base-fonts:1.168rem; /*18.688 px*/
+    --h1-fonts:5.4375rem; /*87 px*/
+    --h2-fonts:3.5rem; /*56 px*/
+    --links-fonts:1.25rem; /*20 px*/
+}
+
+body {
+    background: var(--bg-color);
+    color: white;
+    font: var(--base-fonts) / 1.6 var(--font-secondary);
+
+    
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: var(--h1-fonts);
+}
+h2 {
+    font-size: var(--h2-fonts);
+    line-height: 100%;
+}
+
+/* this is the section labels */
+h3 {
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    font-size: var(--base-fonts);
+    line-height: 1.618rem;
+}
+
+a {
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: var(--links-fonts);
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 61.8vw;
+    max-width: 1440;
+    margin: 0 auto; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    line-height: 4rem;
+    font-size: var(--links-fonts);
+    
+}
+    
+.logo {
+    margin-right: auto;
+    color: white;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 33.33%;
+    gap: 30px;
+}
+
+.menu-item {
+    text-align: right;
+    color: white;
+    text-transform: lowercase;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background: url(./images/computer.png) no-repeat right;
+    height: 473px;
+    font: 2rem / 1.6 var(--font-secondary);
+}
+
+
+.hero h1 {
+    margin-top: 5rem;
+    width: 30rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.hero p {
+    width: 22rem;
+}
+.sub-text {
+    width: 50rem;
+    margin-bottom: 3.4%;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+footer a {
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+footer h3 {
+    text-transform: lowercase;
+    font-weight: 600;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+
+}
+
+
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 18rem;
+    margin-bottom: 10rem;
+}
+
+.text-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:rgba(128, 128, 215, 20%);
+    border-radius: 7px;
+    padding-top: 1.618rem;
+    padding-bottom: 1.618rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    height: calc(50vh - 5rem);
+    margin-bottom: 5rem;
+}
+
+.hero-section.task {
+    background-image: url(./images/task.png);
+    background-position: left;
+    justify-content:flex-end;
+    text-align: right;
+
+    height: 496px;
+    
+    
+}
+
+.hero-section.clip {
+    background-image: url(./images/clip.png);
+    background-position: right;
+    height: 410px;
+}
+
+.hero-content {
+    justify-content: flex-end;
+    text-align: left;
+    width: 30rem;
+}
+.hero-content p {
+    width: 32rem;
+}
+
+.ready {
+    display: flex;
+    height: 28rem;
+    background: linear-gradient(to bottom right, #5151C6, var(--secondary-accent));
+    margin-top: 18rem;
+    margin-bottom: 10rem;
+    border-radius: 80px;
+    align-items: center;
+
+}
+
+
+.pill-link-black-button a {
+    display: inline-block;
+    padding: 50px 25px;
+    border-radius: 80px;
+    background-color: var(--accent-color);
+/* TODO check */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pill-link-black-button a:hover {
+    background-color: var(--secondary-accent);
+}
+
+.hero_center.ready {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_center .hero-content {
+    text-align: center;
+}
+
+.hero_center .hero-content h1 {
+    font-size: var(--h1-fonts);
+    margin-bottom: 1.618rem;
+}
+
+.hero-content h2,
+.hero-content h3 {
+    /* font-size: 2.625rem; */
+    margin-bottom: 1rem;
+}
+
+.hero-content h3 {
+    color: black;
+    font-weight: 700;
+}
+
+.hero-center .hero-content p,
+.hero-content p {
+    margin-bottom: 20px;
+}
+.hero_center .hero-content a.pill-link-black-button,
+.hero-content a {
+    margin-top: 1rem;
+
+    display:inline-block;
+    padding: 15px 30px;
+    border-radius: 80px;
+    /* background-color: var(--accent-color); */
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-center .hero-content a.pill-link-black-button:hover,
+.hero-content a:hover {
+    background-color: var(--primary-accent) !important;
+    /*for some reason, this does not trigger without the important tag*/
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.column form input[type="email"] {
+    background-color: var(--accent-color);
+    padding: 15px 30px;
+    border-radius: 80px;
+    font-family: var(--font-secondary);
+    font-size: var(--links-fonts);
+    position: relative;
+}
+
+.column form input[type="submit"] {
+    background-color: var(--primary-accent);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: var(--base-fonts);
+}
+
+.column form input[type="submit"]:hover {
+    background-color: #5151C6;
+}
+
+.circular-image {
+     border-radius: 50%;
+     width: 119px;
+     height: 119px;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.testimonials-header h2 {
+    margin-bottom: 10px;
+}
+
+.testimonial h2,
+.testimonial h3 {
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+.testimonials-header p {
+    color: grey;
+}
+/*TODO*/
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1.618rem;
+    padding-bottom: 1.618rem;
+}
+
+.testimonial-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial {
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    /*flex-basis: calc(33.33% - 20px);*/
+    flex-basis: calc(33.33% - 1.168rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: var(--accent-color);
+
+}
+
+.testimonial .circular-image {
+    position: absolute;
+    top: -60px;
+}
+
+
+
+a.pill-link {
+    display: inline-block;
+    padding: 20px 75px;
+    border-radius: 80px;
+    background-color: var(--primary-accent);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.pill-link:hover {
+    background-color: var(--accent-color);
+}
+
+a.alt-pill-link {
+    color: white;
+    background-color: none;
+    border-radius: 80px;
+    padding: 25px 75px;
+    border: 2px solid;
+    background: rgba(161, 214, 214, 0.00);
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: calc(var(--h1-fonts) * 0.75);
+    }
+
+    .sub-text {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        background-image: none;
+    }
+
+    .hero h1 {
+        font-size: calc(var(--h1-fonts) * 0.5);
+    }
+
+    .sub-text {
+        width: 90%;
+    }
+
+    .hero-section.clip,
+    .hero-section.task {
+        background-image: none;
+    }
+
+    .testimonial-cards {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    
+
+
+    .testimonial {
+        margin-top: 5rem;
+        flex-basis: 100%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    main { 
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: calc(var(--h1-fonts) * 0.4);
+    }
+
+    .sub-text {
+        width: 100%;
+    }
+}
