@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+
 *{
     box-sizing: boder-box;
     margin: 0;
@@ -25,14 +27,17 @@ body {
 
 h1,
 h2,
-h3 {
+h3, 
+h4,
+h5,
+h6 {
     font-family: var(--font-secondary);
     text-transform: capitalize;
 }
 
 a {
     font-family: var(--font-secondary);
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -41,6 +46,7 @@ a:hover {
 }
 
 main {
+    width: 61.8vw;
     max-width: 1440;
     margin: 0 auto;
 }
@@ -79,6 +85,7 @@ header {
 .hero h1 {
     margin-top: 5rem;
     width: 35rem;
+    font-weight: 700;
 }
 
 .sub-text {
@@ -110,6 +117,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color:rgba(128, 128, 215, 20%);
 }
 
 .image-container img {
@@ -153,14 +161,14 @@ footer {
     background-color: var(--primary-accent);
     margin-top: 18rem;
     margin-bottom: 10rem;
-    border-radius: 50px;
+    border-radius: 80px;
     align-items: center;
 }
 
 .pill-link-black-button a {
     display: inline-block;
     padding: 50px 25px;
-    border-radius: 50px;
+    border-radius: 80px;
     background-color: var(--secondary-accent);
 /* TODO check */
     color: white;
@@ -197,7 +205,7 @@ footer {
 .hero-content a {
     display:inline-block;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 80px;
     /* TODO fix here */
     background-color: var(--secondary-accent);
     color: white;
@@ -297,8 +305,8 @@ footer {
 
 a.pill-link {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 10px 50px;
+    border-radius: 80px;
     background-color: var(--primary-accent);
     color: white;
     text-decoration: none;
@@ -310,10 +318,10 @@ a.pill-link:hover {
 }
 
 a.alt-pill-link {
-    border:#89b0b1;
+    color: white;
     background-color: none;
-    border-radius: 25px;
-    padding: 15px 20px;
+    border-radius: 80px;
+    padding: 20px 50px;
     border: 2px solid;
     background: rgba(161, 214, 214, 0.00);
 }
