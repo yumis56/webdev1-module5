@@ -126,12 +126,28 @@ header {
     margin-bottom: 3.4%;
 }
 
+footer p {
+    font-weight: 600;
+}
+
+footer a {
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+footer h3 {
+    text-transform: lowercase;
+    font-weight: 600;
+}
 footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7rem;
     margin-top: 5rem;
+
 }
+
+
 
 .featured {
     display: flex;
@@ -200,27 +216,29 @@ footer {
 
 .ready {
     display: flex;
-    height: 25 rem;
-    background-color: var(--primary-accent);
+    height: 28rem;
+    background: linear-gradient(to bottom right, #5151C6, var(--secondary-accent));
     margin-top: 18rem;
     margin-bottom: 10rem;
     border-radius: 80px;
     align-items: center;
+
 }
+
 
 .pill-link-black-button a {
     display: inline-block;
     padding: 50px 25px;
     border-radius: 80px;
-    background-color: var(--secondary-accent);
+    background-color: var(--accent-color);
 /* TODO check */
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.pill-link-black-button:hover {
-    background-color: var(--accent-color);
+.pill-link-black-button a:hover {
+    background-color: var(--secondary-accent);
 }
 
 .hero_center.ready {
@@ -235,12 +253,18 @@ footer {
 
 .hero_center .hero-content h1 {
     font-size: var(--h1-fonts);
-    margin-bottom: 10px;
+    margin-bottom: 1.618rem;
 }
 
-.hero-content h2 {
+.hero-content h2,
+.hero-content h3 {
     /* font-size: 2.625rem; */
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+}
+
+.hero-content h3 {
+    color: black;
+    font-weight: 700;
 }
 
 .hero-center .hero-content p,
@@ -249,11 +273,13 @@ footer {
 }
 .hero_center .hero-content a.pill-link-black-button,
 .hero-content a {
+    margin-top: 1rem;
+
     display:inline-block;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 80px;
-    /* TODO fix here */
-    background-color: var(--secondary-accent);
+    /* background-color: var(--accent-color); */
+    background-color: var(--accent-color);
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -261,7 +287,8 @@ footer {
 
 .hero-center .hero-content a.pill-link-black-button:hover,
 .hero-content a:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-accent) !important;
+    /*for some reason, this does not trigger without the important tag*/
 }
 
 .column {
@@ -274,22 +301,34 @@ footer {
 .column form {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+
+}
+
+.column form input[type="email"] {
+    background-color: var(--accent-color);
+    padding: 15px 30px;
+    border-radius: 80px;
+    font-family: var(--font-secondary);
+    font-size: var(--links-fonts);
+    position: relative;
 }
 
 .column form input[type="submit"] {
-    background-color: var(--primary-color);
+    background-color: var(--primary-accent);
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 15px 30px;
+    border-radius: 80px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: var(--base-fonts);
 }
 
-.column form input[type="submit"] {
-    background-color: var(--accent-color);
+.column form input[type="submit"]:hover {
+    background-color: #5151C6;
 }
 
 .circular-image {
@@ -348,6 +387,7 @@ footer {
     position: relative;
     margin-bottom: 20px;
     background-color: var(--accent-color);
+
 }
 
 .testimonial .circular-image {
